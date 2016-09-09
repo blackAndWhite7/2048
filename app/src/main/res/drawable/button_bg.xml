@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--注意：selector里需要把默认情况下实用的图片放在后面，就是state_prrssed这个属性的item的后面，这样才能显示出来默认情况下的图片-->
+    <item android:state_pressed="true" android:drawable="@drawable/button_state2"></item>
+    <item android:drawable="@drawable/button_state1"></item>
+</selector>

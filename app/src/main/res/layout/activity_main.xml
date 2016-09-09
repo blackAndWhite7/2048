@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_main_targetscore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:background="@drawable/textview_bg"
+            android:gravity="center"
+            android:padding="10px"
+            android:text="2048"
+            android:textSize="40sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_margin="10px"
+                android:layout_weight="1.5"
+                android:background="@drawable/textview_score"
+                android:gravity="center"
+                android:text="score"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_main_score"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/textview_scorevalue"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_margin="10px"
+                android:layout_weight="1.5"
+                android:background="@drawable/textview_score"
+                android:gravity="center"
+                android:text="record"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_main_record"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="@drawable/textview_scorevalue"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_main_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CAE6CA">
+
+        <!--<GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gl_main_container">
+        </GridLayout>-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_main_revert"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="revert"/>
+
+        <Button
+            android:id="@+id/bt_main_restart"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="restart"/>
+
+        <Button
+            android:id="@+id/bt_main_option"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="option"/>
+
+    </LinearLayout>
+
+</LinearLayout>
